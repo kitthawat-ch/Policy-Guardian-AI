@@ -1,4 +1,6 @@
-# ระบบผู้ช่วยตรวจสอบนโยบายอัจฉริยะ (AI Policy & Compliance Assistant)
+# Policy Guardian AI
+
+**AI Agent for Enterprise Policy Intelligence**
 
 แพลตฟอร์มระดับองค์กรที่ช่วยเพิ่มความเร็วในการทำงานของวิศวกรผ่านสถาปัตยกรรมปัญญาประดิษฐ์แบบ Agentic พร้อมระบบการอนุมัติโดยมนุษย์ (Human-in-the-Loop) โปรเจกต์นี้ส่งเข้าร่วมใน **Kaggle 5-Day AI Agents: Intensive Vibe Coding Course with Google** Capstone (Track: Agents for Business)
 

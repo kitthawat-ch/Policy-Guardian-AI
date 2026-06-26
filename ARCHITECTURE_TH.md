@@ -4,7 +4,6 @@
 
 ระบบนี้ใช้โครงสร้างแบบ **Clean Architecture** เพื่อแยกส่วนการทำงานต่างๆ อย่างชัดเจน
 
-```mermaid
 graph TD
     UI[Frontend: Next.js & Tailwind] -->|REST API & WebSockets| API[FastAPI Endpoints]
     API --> AS[Agent Service (Agentic AI)]
