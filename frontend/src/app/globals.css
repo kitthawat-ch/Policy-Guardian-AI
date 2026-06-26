@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+}
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Background Glassmorphism Orbs - THAILAND THEME */
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 36, 125, 0.25); /* Thai Flag Deep Blue */
+  top: -100px;
+  left: -100px;
+}
+
+.orb-2 {
+  width: 600px;
+  height: 600px;
+  background: rgba(239, 51, 64, 0.2); /* Thai Flag Red */
+  bottom: -200px;
+  right: -100px;
+}
+
+.orb-3 {
+  width: 400px;
+  height: 400px;
+  background: rgba(212, 175, 55, 0.25); /* Elegant Gold */
+  top: 30%;
+  left: 40%;
+}

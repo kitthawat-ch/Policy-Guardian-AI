@@ -1,0 +1,70 @@
+# Environments
+.env
+.venv
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Next.js / Node
+node_modules/
+.pnp
+.pnp.js
+.next/
+out/
+build/
+.npm
+.eslintcache
+.stylelintcache
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Vercel / Cloud
+.vercel
+
+# Custom Folders
+Capstone-Plan-Run/
+Capstone-Plan-Run-TH/
+docs/
+
+Video-Run/
