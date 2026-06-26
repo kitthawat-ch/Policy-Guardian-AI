@@ -1,6 +1,6 @@
 # Policy Guardian AI
 
-**AI Agent for Enterprise Policy Intelligence** / **ระบบผู้ช่วยอัจฉริยะสำหรับค้นหา ตีความ และตรวจสอบความสอดคล้องตามระเบียบองค์กร**
+**AI Agent for Enterprise Policy Intelligence**
 
 An enterprise-grade platform accelerating engineering velocity through an Agentic AI Architecture and strict Human-in-the-Loop workflows. This project is submitted for the **Kaggle 5-Day AI Agents: Intensive Vibe Coding Course with Google** Capstone (Track: Agents for Business).
 
