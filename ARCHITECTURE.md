@@ -4,7 +4,6 @@
 
 The application follows the **Clean Architecture** paradigm, ensuring separation of concerns across multiple domain layers. 
 
-```mermaid
 graph TD
     UI[Frontend: Next.js & Tailwind] -->|REST API & WebSockets| API[FastAPI Endpoints]
     API --> AS[Agent Service (Agentic AI)]

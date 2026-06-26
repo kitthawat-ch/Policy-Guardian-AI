@@ -40,7 +40,7 @@ graph TD
 
 ## คำอธิบายแต่ละส่วน (Layer Definitions)
 
-1. **ส่วนหน้าบ้าน (Frontend - Next.js App Router)**: จัดการการแสดงผลแบบโต้ตอบ รองรับหน้าจอแสดงผลหลายรูปแบบ เช่น Ask Policy AI, Evaluate, Reviewer Queue, และหน้าตรวจสอบย้อนหลังต่างๆ
+1. **ส่วนหน้าบ้าน (Frontend - Next.js App Router)**: จัดการการแสดงผลแบบโต้ตอบ รองรับหน้าจอแสดงผลหลายรูปแบบ ได้แก่ Ask Policy AI, Evaluate, Reviewer Queue, Knowledge Base, MCP Hub, Audit Logs, Capstone Showcase, Agent Skills, LLM Monitor (LLM Logs) พร้อมคำบรรยายภาษาไทย
 2. **ส่วน API (FastAPI)**: จุดรับส่งข้อมูลหลัก รองรับการเชื่อมต่อแบบ HTTP และ WebSockets (`/ws/reviewer`) เพื่ออัปเดตสถานะตั๋วแบบเรียลไทม์
 3. **ส่วนบริการจัดการ (Service Layer)**: 
     - **Agent Service**: หัวใจหลักของ **สถาปัตยกรรมปัญญาประดิษฐ์แบบ Agentic** ทำหน้าที่วิเคราะห์และแบ่งงานให้ AI Agent ย่อย
@@ -52,7 +52,7 @@ graph TD
     - **Auditor Agent**: ใช้ **ระบบปรับเปลี่ยนทักษะ AI แบบไดนามิก (Dynamic Skills)** ร่วมกับ **ระบบป้องกันการโจมตีแบบ Prompt Injection** เพื่อประเมินความเสี่ยงและป้องกันการแฮ็ก
 5. **ส่วนโปรโตคอลเชื่อมต่อฐานข้อมูล (MCP Server API Layer)**: ทำหน้าที่ควบคุมสิทธิ์ให้ AI เข้าถึงเฉพาะข้อมูลที่อนุญาตผ่าน **Model Context Protocol (MCP)**
 6. **ส่วนเชื่อมต่อฐานข้อมูล (Repository Layer)**: จัดการคำสั่งฐานข้อมูลผ่านตัวกลาง (SQLAlchemy) เพื่อป้องกันช่องโหว่
-7. **ฐานข้อมูล (Database)**: จัดเก็บข้อมูลต่างๆ เช่น นโยบาย, รายการคำขอ, ประวัติการประมวลผลของ LLM และผลประเมิน
+7. **ฐานข้อมูล (Database)**: SQLite (อัปเกรดได้เป็น PostgreSQL) จัดเก็บข้อมูลต่างๆ ได้แก่ Users, Policies, Requests, Tickets, Documents, Audit Logs, LLM Logs และ RAG Evaluations
 
 ## สถาปัตยกรรมด้านความปลอดภัย (Security Architecture)
 - **การแยกส่วนการประมวลผล (Data Isolation)**: AI ประมวลผลแยกส่วนจากฐานข้อมูล และเข้าถึงข้อมูลผ่าน MCP เท่านั้น ป้องกันการหลุดรั่วของข้อมูลสำคัญ
