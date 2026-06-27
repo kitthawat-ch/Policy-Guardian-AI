@@ -66,5 +66,8 @@ Thumbs.db
 Capstone-Plan-Run/
 Capstone-Plan-Run-TH/
 docs/
-
 Video-Run/
+
+# Data Files (do not commit)
+backend/chroma_db/
+chroma_db/
